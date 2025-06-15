@@ -36,4 +36,24 @@ public class TestController {
   public ResponseEntity<String> testDelete() {
     return ResponseEntity.ok(service.callDelete());
   }
+
+  @GetMapping("/simulate/server-error")
+  public ResponseEntity<String> simulateServerError() {
+    return ResponseEntity.ok(service.simulateServerError());
+  }
+
+  @GetMapping("/simulate/client-error")
+  public ResponseEntity<String> simulateClientError() {
+    return ResponseEntity.ok(service.simulateClientError());
+  }
+
+  @GetMapping("/simulate/timeout")
+  public ResponseEntity<String> simulateTimeout() {
+    return ResponseEntity.ok(service.simulateTimeout());
+  }
+
+  @GetMapping("/simulate/socket-exception")
+  public ResponseEntity<String> simulateSocketError() {
+    return ResponseEntity.ok(service.simulateConnectionRefused());
+  }
 }
