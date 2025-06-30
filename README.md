@@ -1,7 +1,7 @@
-# Spring Boot RestTemplate
+# Spring Boot RestTemplate Demo
 
-
-## Spring Boot SOCKS Proxy RestTemplate
+---
+### Spring Boot SOCKS Proxy RestTemplate
 To configure an application to route HTTP(S) requests through a SOCKS proxy using a custom `RestTemplate`. 
 
 This is useful if:
@@ -10,7 +10,7 @@ This is useful if:
 
 ---
 
-## How It Works
+### How It Works
 
 - You create a SOCKS proxy on your local machine using SSH to the authorized server.
 - You configure a Spring `RestTemplate` bean to send all requests via that SOCKS proxy.
@@ -18,7 +18,7 @@ This is useful if:
 
 ---
 
-## Setting Up the SOCKS Proxy
+### Setting Up the SOCKS Proxy
 
 1. **Open a terminal on your local machine.**
 
@@ -36,7 +36,7 @@ This is useful if:
 
 ---
 
-## RestTemplate Configuration
+### RestTemplate Configuration
 
 - Add the following bean configuration in your Spring Boot project:
 
